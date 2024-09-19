@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <title>Carrinho de Compras</title>
+    <style>
+        .produto {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 5px;
+            display: inline-block;
+            cursor: grab;
+        }
+
+        #lista-produtos {
+            border: 1px dashed beige;
+            padding: 10px;
+            min-height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <ul id="lista-produtos"></ul>
+    <h3>PRODUTOS DISPONÍVEIS</h3>
+    <div class="produto" draggable="true" ondragstart="drag(event)" id="produto-1">
+        <p>ID: 1</p>
+        <p>Nome: Camiseta</p>
+        <p>Valor: R$29.99</p>
+        <p>Quantidade: 2</p>
+    </div>
+    <div class="produto" draggable="true" ondragstart="drag(event)" id="produto-2">
+        <p>ID: 2</p>
+        <p>Nome: Calça Jeans</p>
+        <p>Valor: R$99.90</p>
+        <p>Quantidade: 1</p>
+    </div>
+    <div class="produto" draggable="true" ondragstart="drag(event)" id="produto-3">
+        <p>ID: 3</p>
+        <p>Nome: Tênis</p>
+        <p>Valor: R$149.90</p>
+        <p>Quantidade: 1</p>
+    </div>
+
+    <h3>Arraste e solte produtos no carrinho</h3>
+    <div id="carrinho" ondragover="allowDrop(event)" ondrop="drop(event)">
+        <p>Arraste os produtos aqui para adicionar ao carrinho</p>
+    </div>
+
+    <script src="atividade2.js"></script>
+</body>
+
+</html>

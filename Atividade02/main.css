@@ -1,0 +1,145 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: bisque;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+div {
+    background-color: #fff;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    box-sizing: border-box;
+}
+
+p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+button {
+    background-color: #008fa8;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.1s;
+}
+
+button:hover {
+    background-color: #006779;
+}
+
+
+ul#lista-produtos {
+    list-style: none;
+    padding: 0;
+    width: 30%;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+
+ul#lista-produtos li {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; 
+    box-sizing: border-box;
+}
+
+h3 {
+    margin-top: 30px;
+    font-size: 20px;
+    color: #333;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    box-sizing: border-box;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #555;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+form button {
+    width: 100%;
+    background-color: #008fa8;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #006779;
+}
+
+ul#lista-produtos li button {
+    background-color: #da1e31;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+ul#lista-produtos li button:hover {
+    background-color: #b60e1f;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    div, form {
+        width: 100%;
+        padding: 10px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    ul#lista-produtos li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    ul#lista-produtos li button {
+        margin-top: 10px;
+        width: 100%;
+    }
+}
